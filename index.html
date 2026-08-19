@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Udosen | Engineer & Cybersecurity Professional</title>
+    <title>Emmanuel Udosen | Personal Ecosystem</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -28,12 +28,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Blinking Cursor Styling */
+        .cursor {
+            display: inline-block;
+            margin-left: 2px;
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
 <body class="bg-charcoal text-white font-sans antialiased selection:bg-gold-primary selection:text-black">
 
     <!-- Top Announcement / Contact Bar -->
     <div class="bg-gradient-to-r from-gold-primary via-yellow-600 to-gold-primary text-black font-semibold text-xs py-2 px-6 text-center md:text-left flex justify-between items-center">
-        <span>ENGINEER • CYBERSECURITY • QUANTUM RESEARCHER</span>
+        <span>EMMANUEL UDOSEN • PERSONAL ECOSYSTEM</span>
         <div class="hidden md:flex space-x-6 text-xs font-bold">
             <a href="mailto:contact@emmanueludosen.com" class="hover:underline">contact@emmanueludosen.com</a>
         </div>
@@ -54,11 +67,11 @@
             <!-- Menu Navigation Links -->
             <nav class="mt-6 flex flex-wrap justify-center items-center gap-6 text-xs md:text-sm font-semibold tracking-wider text-gray-300">
                 <a href="#about" class="hover:text-gold-primary transition-colors">ABOUT</a>
-                <a href="#cybersecurity" class="hover:text-gold-primary transition-colors">CYBERSECURITY</a>
-                <a href="#quantum" class="hover:text-gold-primary transition-colors">QUANTUM TECH</a>
-                <a href="#education" class="hover:text-gold-primary transition-colors">EDUCATION & TEAM A</a>
-                <a href="#business" class="hover:text-gold-primary transition-colors">BUSINESS & SERVICES</a>
-                <a href="#speaking" class="hover:text-gold-primary transition-colors">SPEAKING</a>
+                <a href="#portals" class="hover:text-gold-primary transition-colors">CYBERSECURITY</a>
+                <a href="#portals" class="hover:text-gold-primary transition-colors">QUANTUM TECH</a>
+                <a href="#portals" class="hover:text-gold-primary transition-colors">EDUCATION & TEAM A</a>
+                <a href="#portals" class="hover:text-gold-primary transition-colors">BUSINESS & SERVICES</a>
+                <a href="#portals" class="hover:text-gold-primary transition-colors">SPEAKING</a>
                 
                 <a href="#contact" class="ml-2 bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-bold px-5 py-2 rounded text-xs tracking-wider uppercase hover:opacity-90 transition-opacity">
                     Get In Touch
@@ -67,22 +80,28 @@
         </div>
     </header>
 
-    <!-- Full-Width Hero Section (Matching Image Layout) -->
+    <!-- Full-Width Hero Section with Animated Dynamic Typing -->
     <section class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10">
-        <!-- Background Overlay Image/Pattern -->
+        <!-- Background Overlay Image -->
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
         
-        <!-- Gradient Overlay to ensure text readability -->
+        <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-transparent"></div>
 
         <!-- Hero Content Overlay -->
         <div class="relative z-10 max-w-5xl mx-auto text-center px-6">
-            <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tight text-white mb-4">
-                ENGINEER
+            
+            <!-- Dynamic Main Title -->
+            <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tight text-white mb-4 min-h-[120px] md:min-h-[160px] flex items-center justify-center">
+                <span id="typed-title" class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gold-primary"></span>
+                <span class="cursor text-gold-primary">|</span>
             </h1>
-            <p class="text-lg md:text-2xl font-light text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
-                Building secure ecosystems, advancing quantum technology research, and empowering the next generation through practical education.
+
+            <!-- Dynamic Subtitle/Tagline -->
+            <p id="typed-subtitle" class="text-lg md:text-2xl font-light text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8 min-h-[60px] transition-opacity duration-300">
+                Loading...
             </p>
+
             <div>
                 <a href="#portals" class="inline-block bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-extrabold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:shadow-lg hover:shadow-gold-primary/20 hover:scale-105 transition-all duration-300">
                     Explore Ecosystem
@@ -147,7 +166,7 @@
                     <span class="text-gold-primary text-xs font-mono">04 / VENTURES</span>
                     <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Business & Services</h3>
                     <p class="text-gray-400 text-sm mt-3 leading-relaxed">
-                        Consulting services, technology solutions, business ventures, and strategic partnerships.
+                        Consulting services, technical solutions, business ventures, and strategic partnerships.
                     </p>
                 </div>
                 <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
@@ -176,5 +195,66 @@
         &copy; Emmanuel Udosen. All Rights Reserved.
     </footer>
 
+    <!-- Typewriter Script -->
+    <script>
+        const roles = [
+            {
+                title: "ENGINEER",
+                subtitle: "Understanding complex problems, building practical systems, and engineering impactful solutions."
+            },
+            {
+                title: "CYBERSECURITY PROFESSIONAL",
+                subtitle: "Analyzing system failures, vulnerability vectors, penetration testing, and building defensive architectures."
+            },
+            {
+                title: "QUANTUM RESEARCHER",
+                subtitle: "Exploring quantum computing from first principles, algorithms, Qiskit frameworks, and quantum security."
+            },
+            {
+                title: "EDUCATOR & BUILDER",
+                subtitle: "Empowering minds through Team A, practical competence, leadership development, and applied knowledge."
+            }
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTitleEl = document.getElementById("typed-title");
+        const typedSubtitleEl = document.getElementById("typed-subtitle");
+
+        function typeEffect() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typedTitleEl.textContent = currentRole.title.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTitleEl.textContent = currentRole.title.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            // Update Subtitle instantly when starting to type a new role
+            typedSubtitleEl.textContent = currentRole.subtitle;
+
+            let typingSpeed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === currentRole.title.length) {
+                // Pause at the end of typing
+                typingSpeed = 2200;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                typingSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        // Initialize Typewriter on Load
+        document.addEventListener("DOMContentLoaded", () => {
+            typeEffect();
+        });
+    </script>
 </body>
 </html>
