@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Udosen | Engineer, Cybersecurity & Quantum Researcher</title>
+    <title>Emmanuel Udosen | Engineer & Cybersecurity Professional</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -11,10 +11,14 @@
             theme: {
                 extend: {
                     colors: {
-                        charcoal: '#121212',
-                        'charcoal-card': '#1E1E1E',
-                        'gold-accent': '#D4AF37',
-                        'gold-hover': '#F3E5AB',
+                        charcoal: '#0F0F0F',
+                        'charcoal-card': '#181818',
+                        'gold-primary': '#D4AF37',
+                        'gold-light': '#F3E5AB',
+                    },
+                    fontFamily: {
+                        signature: ['"Cinzel Decorative"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
             }
@@ -23,143 +27,153 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-charcoal text-white antialiased selection:bg-gold-accent selection:text-black">
+<body class="bg-charcoal text-white font-sans antialiased selection:bg-gold-primary selection:text-black">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-extrabold tracking-wider text-white">
-                EMMANUEL <span class="text-gold-accent">UDOSEN</span>
-            </a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                <a href="#about" class="hover:text-gold-accent transition-colors">About</a>
-                <a href="#portals" class="hover:text-gold-accent transition-colors">Portals</a>
-                <a href="#contact" class="hover:text-gold-accent transition-colors">Contact</a>
-            </div>
-            <a href="#contact" class="border border-gold-accent text-gold-accent px-4 py-2 rounded text-sm font-semibold hover:bg-gold-accent hover:text-black transition-all duration-300">
-                Get in Touch
-            </a>
+    <!-- Top Announcement / Contact Bar -->
+    <div class="bg-gradient-to-r from-gold-primary via-yellow-600 to-gold-primary text-black font-semibold text-xs py-2 px-6 text-center md:text-left flex justify-between items-center">
+        <span>ENGINEER • CYBERSECURITY • QUANTUM RESEARCHER</span>
+        <div class="hidden md:flex space-x-6 text-xs font-bold">
+            <a href="mailto:contact@emmanueludosen.com" class="hover:underline">contact@emmanueludosen.com</a>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-24 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <span class="inline-block text-gold-accent text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-4 border border-gold-accent/30 px-3 py-1 rounded-full bg-gold-accent/5">
-                Personal Ecosystem
+    <!-- Main Navigation Header -->
+    <header class="bg-charcoal border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col items-center">
+            
+            <!-- Brand Signature Title -->
+            <a href="#" class="text-3xl md:text-5xl font-signature tracking-widest text-white text-center hover:text-gold-primary transition-colors">
+                Emmanuel Udosen
+            </a>
+            <span class="text-xs uppercase tracking-[0.4em] text-gold-primary mt-1 font-semibold">
+                Engineer | Cybersecurity | Quantum | Educator
             </span>
-            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Engineer. Cybersecurity Professional. <br class="hidden md:block"/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-accent via-yellow-200 to-gold-accent">
-                    Quantum Researcher.
-                </span> Educator.
-            </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mb-10">
-                Working across technology, cybersecurity, quantum computing, and business to solve complex problems, build practical solutions, and create applied knowledge.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#portals" class="bg-gold-accent text-black font-bold px-8 py-4 rounded hover:bg-gold-hover transition-all duration-300 shadow-lg shadow-gold-accent/10">
-                    Explore Ecosystem
+
+            <!-- Menu Navigation Links -->
+            <nav class="mt-6 flex flex-wrap justify-center items-center gap-6 text-xs md:text-sm font-semibold tracking-wider text-gray-300">
+                <a href="#about" class="hover:text-gold-primary transition-colors">ABOUT</a>
+                <a href="#cybersecurity" class="hover:text-gold-primary transition-colors">CYBERSECURITY</a>
+                <a href="#quantum" class="hover:text-gold-primary transition-colors">QUANTUM TECH</a>
+                <a href="#education" class="hover:text-gold-primary transition-colors">EDUCATION & TEAM A</a>
+                <a href="#business" class="hover:text-gold-primary transition-colors">BUSINESS & SERVICES</a>
+                <a href="#speaking" class="hover:text-gold-primary transition-colors">SPEAKING</a>
+                
+                <a href="#contact" class="ml-2 bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-bold px-5 py-2 rounded text-xs tracking-wider uppercase hover:opacity-90 transition-opacity">
+                    Get In Touch
                 </a>
-                <a href="#about" class="border border-white/20 text-white font-semibold px-8 py-4 rounded hover:bg-white/10 transition-all duration-300">
-                    Read Biography
+            </nav>
+        </div>
+    </header>
+
+    <!-- Full-Width Hero Section (Matching Image Layout) -->
+    <section class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10">
+        <!-- Background Overlay Image/Pattern -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+        
+        <!-- Gradient Overlay to ensure text readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-transparent"></div>
+
+        <!-- Hero Content Overlay -->
+        <div class="relative z-10 max-w-5xl mx-auto text-center px-6">
+            <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tight text-white mb-4">
+                ENGINEER
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
+                Building secure ecosystems, advancing quantum technology research, and empowering the next generation through practical education.
+            </p>
+            <div>
+                <a href="#portals" class="inline-block bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-extrabold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:shadow-lg hover:shadow-gold-primary/20 hover:scale-105 transition-all duration-300">
+                    Explore Ecosystem
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- The 5 Portals Grid -->
-    <section id="portals" class="py-24 px-6 bg-black/40 border-t border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-16 text-center md:text-left">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white">Focus Areas</h2>
-                <p class="text-gray-400 mt-2">Select a portal to explore specific work, research, and initiatives.</p>
-            </div>
+    <!-- The 5 Core Portals Grid Section -->
+    <section id="portals" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-gold-primary font-bold">Portals</h2>
+            <p class="text-3xl md:text-4xl font-extrabold text-white mt-2">Explore Focus Areas</p>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Portal 1 -->
-                <a href="./cybersecurity.html" class="group relative bg-charcoal-card p-8 rounded-xl border border-white/10 hover:border-gold-accent transition-all duration-500 flex flex-col justify-between hover:-translate-y-1">
-                    <div>
-                        <span class="text-gold-accent font-mono text-sm tracking-widest uppercase">01 / Security</span>
-                        <h3 class="text-2xl font-bold text-white mt-4 group-hover:text-gold-accent transition-colors">Cybersecurity</h3>
-                        <p class="text-gray-400 mt-3 text-sm leading-relaxed">
-                            Vulnerability assessments, malware analysis, security tools, research notes, and penetration testing labs.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center text-gold-accent text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                        Explore Cybersecurity &rarr;
-                    </div>
-                </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cybersecurity Card -->
+            <a href="./cybersecurity.html" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <span class="text-gold-primary text-xs font-mono">01 / SECURITY</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Cybersecurity</h3>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Security research, vulnerability assessments, penetration testing labs, and GRC systems.
+                    </p>
+                </div>
+                <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                    Enter Portal &rarr;
+                </div>
+            </a>
 
-                <!-- Portal 2 -->
-                <a href="./quantum.html" class="group relative bg-charcoal-card p-8 rounded-xl border border-white/10 hover:border-gold-accent transition-all duration-500 flex flex-col justify-between hover:-translate-y-1">
-                    <div>
-                        <span class="text-gold-accent font-mono text-sm tracking-widest uppercase">02 / Research</span>
-                        <h3 class="text-2xl font-bold text-white mt-4 group-hover:text-gold-accent transition-colors">Quantum Technology</h3>
-                        <p class="text-gray-400 mt-3 text-sm leading-relaxed">
-                            Quantum computing fundamentals, algorithms, Qiskit code experiments, and post-quantum security exploration.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center text-gold-accent text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                        Explore Quantum &rarr;
-                    </div>
-                </a>
+            <!-- Quantum Technology Card -->
+            <a href="./quantum.html" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <span class="text-gold-primary text-xs font-mono">02 / RESEARCH</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Quantum Tech</h3>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Quantum computing theory, Qiskit code experiments, algorithms, and post-quantum security.
+                    </p>
+                </div>
+                <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                    Enter Portal &rarr;
+                </div>
+            </a>
 
-                <!-- Portal 3 -->
-                <a href="./education.html" class="group relative bg-charcoal-card p-8 rounded-xl border border-white/10 hover:border-gold-accent transition-all duration-500 flex flex-col justify-between hover:-translate-y-1">
-                    <div>
-                        <span class="text-gold-accent font-mono text-sm tracking-widest uppercase">03 / Academia</span>
-                        <h3 class="text-2xl font-bold text-white mt-4 group-hover:text-gold-accent transition-colors">Education & Team A</h3>
-                        <p class="text-gray-400 mt-3 text-sm leading-relaxed">
-                            Educational initiatives, Team A story, student development programs, impact metrics, and publications.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center text-gold-accent text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                        Explore Education &rarr;
-                    </div>
-                </a>
+            <!-- Education & Team A Card -->
+            <a href="./education.html" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <span class="text-gold-primary text-xs font-mono">03 / ACADEMIA</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Education & Team A</h3>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Educational initiatives, Team A story, mentorship programs, student experiences, and impact.
+                    </p>
+                </div>
+                <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                    Enter Portal &rarr;
+                </div>
+            </a>
 
-                <!-- Portal 4 -->
-                <a href="./business.html" class="group relative bg-charcoal-card p-8 rounded-xl border border-white/10 hover:border-gold-accent transition-all duration-500 flex flex-col justify-between hover:-translate-y-1">
-                    <div>
-                        <span class="text-gold-accent font-mono text-sm tracking-widest uppercase">04 / Ventures</span>
-                        <h3 class="text-2xl font-bold text-white mt-4 group-hover:text-gold-accent transition-colors">Business & Services</h3>
-                        <p class="text-gray-400 mt-3 text-sm leading-relaxed">
-                            Consulting, technical solutions, technology ventures, partnerships, and current business offerings.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center text-gold-accent text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                        View Services &rarr;
-                    </div>
-                </a>
+            <!-- Business & Services Card -->
+            <a href="./business.html" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <span class="text-gold-primary text-xs font-mono">04 / VENTURES</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Business & Services</h3>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Consulting services, technology solutions, business ventures, and strategic partnerships.
+                    </p>
+                </div>
+                <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                    Enter Portal &rarr;
+                </div>
+            </a>
 
-                <!-- Portal 5 -->
-                <a href="./speaking.html" class="group relative bg-charcoal-card p-8 rounded-xl border border-white/10 hover:border-gold-accent transition-all duration-500 flex flex-col justify-between hover:-translate-y-1 md:col-span-2 lg:col-span-1">
-                    <div>
-                        <span class="text-gold-accent font-mono text-sm tracking-widest uppercase">05 / Engagement</span>
-                        <h3 class="text-2xl font-bold text-white mt-4 group-hover:text-gold-accent transition-colors">Speaking & Workshops</h3>
-                        <p class="text-gray-400 mt-3 text-sm leading-relaxed">
-                            Inviting engagement around technology, cybersecurity, education, leadership, and technical training.
-                        </p>
-                    </div>
-                    <div class="mt-8 flex items-center text-gold-accent text-sm font-semibold group-hover:translate-x-2 transition-transform">
-                        Invite to Speak &rarr;
-                    </div>
-                </a>
-
-            </div>
+            <!-- Speaking & Engagement Card -->
+            <a href="./speaking.html" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                <div>
+                    <span class="text-gold-primary text-xs font-mono">05 / ENGAGEMENT</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Speaking & Workshops</h3>
+                    <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                        Keynotes, technical workshops, panel engagements, and leadership sessions.
+                    </p>
+                </div>
+                <div class="mt-8 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                    Enter Portal &rarr;
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
-        <p>&copy; Emmanuel Udosen. All rights reserved.</p>
+    <footer class="border-t border-white/10 py-12 text-center text-xs text-gray-500 uppercase tracking-widest">
+        &copy; Emmanuel Udosen. All Rights Reserved.
     </footer>
 
 </body>
