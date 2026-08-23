@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <style>
-        /* Blinking Cursor Styling */
         .cursor {
             display: inline-block;
             margin-left: 2px;
@@ -44,7 +43,7 @@
 </head>
 <body class="bg-charcoal text-white font-sans antialiased selection:bg-gold-primary selection:text-black">
 
-    <!-- Top Announcement Bar -->
+    <!-- Top Bar -->
     <div class="bg-gradient-to-r from-gold-primary via-yellow-600 to-gold-primary text-black font-semibold text-xs py-2 px-6 text-center md:text-left flex justify-between items-center">
         <span>EMMANUEL UDOSEN • PERSONAL ECOSYSTEM</span>
         <div class="hidden md:flex space-x-6 text-xs font-bold">
@@ -60,15 +59,14 @@
             <a href="#" class="text-3xl md:text-5xl font-signature tracking-widest text-white text-center hover:text-gold-primary transition-colors">
                 Emmanuel Udosen
             </a>
-            <!-- Simplified Subtitle -->
             <span class="text-xs uppercase tracking-[0.4em] text-gold-primary mt-2 font-semibold">
                 Avid Learner & Educator
             </span>
 
-            <!-- Simplified Menu Navigation Links -->
+            <!-- Main Menu Links -->
             <nav class="mt-6 flex justify-center items-center gap-8 text-xs md:text-sm font-semibold tracking-wider text-gray-300">
                 
-                <!-- ABOUT WITH HOVER DROPDOWN -->
+                <!-- ABOUT DROPDOWN LINKED TO YOUR FOLDERS -->
                 <div class="relative group py-2">
                     <a href="#about" class="hover:text-gold-primary transition-colors flex items-center gap-1 cursor-pointer">
                         ABOUT
@@ -77,34 +75,33 @@
                         </svg>
                     </a>
 
-                    <!-- Step / Dropdown Options -->
                     <div class="absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col w-64 bg-charcoal-card border border-gold-primary/30 rounded-lg shadow-2xl p-2 z-50 transition-all duration-300">
                         <span class="text-[10px] uppercase font-mono tracking-widest text-gold-primary px-3 py-1 border-b border-white/10 mb-1">
-                            Areas of Interest & Work
+                            Areas of Focus
                         </span>
-                        <a href="./cybersecurity.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                        <a href="./cybersecurity/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
                             01. Cybersecurity
                         </a>
-                        <a href="./quantum.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                        <a href="./quantum-technology/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
                             02. Quantum Technology
                         </a>
-                        <a href="./ai-safety.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                        <a href="./ai-safety/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
                             03. AI Safety
                         </a>
-                        <a href="./brain-study.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
-                            04. Brain Study / Cognition
+                        <a href="./initiatives/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                            04. Initiatives & Team A
                         </a>
-                        <a href="./finance.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
-                            05. Finance & Economics
+                        <a href="./leadership/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                            05. Leadership
                         </a>
-                        <a href="./education.html" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
-                            06. Education & Team A
+                        <a href="./finance/" class="px-3 py-2 text-xs hover:bg-gold-primary hover:text-black rounded transition-colors text-left font-medium">
+                            06. Financial Intelligence
                         </a>
                     </div>
                 </div>
 
-                <a href="./business.html" class="hover:text-gold-primary transition-colors">BUSINESS & SERVICES</a>
-                <a href="./speaking.html" class="hover:text-gold-primary transition-colors">SPEAKING</a>
+                <a href="#business" class="hover:text-gold-primary transition-colors">BUSINESS & SERVICES</a>
+                <a href="#speaking" class="hover:text-gold-primary transition-colors">SPEAKING</a>
                 
                 <a href="#contact" class="ml-2 bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-bold px-5 py-2 rounded text-xs tracking-wider uppercase hover:opacity-90 transition-opacity">
                     Get In Touch
@@ -113,7 +110,7 @@
         </div>
     </header>
 
-    <!-- Full-Width Hero Section -->
+    <!-- Hero Section -->
     <section class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10">
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-transparent"></div>
@@ -129,10 +126,62 @@
             </p>
 
             <div>
-                <a href="#about" class="inline-block bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-extrabold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:shadow-lg hover:shadow-gold-primary/20 hover:scale-105 transition-all duration-300">
-                    Explore Interests
+                <a href="#portals" class="inline-block bg-gradient-to-r from-gold-primary to-yellow-600 text-black font-extrabold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:shadow-lg hover:shadow-gold-primary/20 hover:scale-105 transition-all duration-300">
+                    Explore Focus Areas
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- Focus Grid Section -->
+    <section id="portals" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-gold-primary font-bold">Portals</h2>
+            <p class="text-3xl md:text-4xl font-extrabold text-white mt-2">Explore Active Research & Projects</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="./cybersecurity/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">01 / SECURITY</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Cybersecurity</h3>
+                <p class="text-gray-400 text-sm mt-3">Security research, vulnerability assessment, and malware analysis.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
+
+            <a href="./quantum-technology/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">02 / RESEARCH</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Quantum Tech</h3>
+                <p class="text-gray-400 text-sm mt-3">Quantum computing, Qiskit experiments, and first-principles study.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
+
+            <a href="./ai-safety/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">03 / ALIGNMENT</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">AI Safety</h3>
+                <p class="text-gray-400 text-sm mt-3">Predictions, alignment frameworks, risk vectors, and system safety.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
+
+            <a href="./initiatives/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">04 / ACADEMIA</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Initiatives & Team A</h3>
+                <p class="text-gray-400 text-sm mt-3">Mentorship programs, practical competence, and student development.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
+
+            <a href="./leadership/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">05 / IMPACT</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Leadership</h3>
+                <p class="text-gray-400 text-sm mt-3">Organizational experience, building teams, and driving value.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
+
+            <a href="./finance/" class="bg-charcoal-card p-8 rounded-lg border border-white/10 hover:border-gold-primary transition-all group">
+                <span class="text-gold-primary text-xs font-mono">06 / INTELLIGENCE</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-gold-primary transition-colors">Financial Intelligence</h3>
+                <p class="text-gray-400 text-sm mt-3">Markets, economic principles, qualitative analysis, and business value.</p>
+                <div class="mt-6 text-gold-primary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Enter Portal &rarr;</div>
+            </a>
         </div>
     </section>
 
@@ -146,11 +195,11 @@
         const roles = [
             {
                 title: "AVID LEARNER",
-                subtitle: "Continuously exploring cybersecurity, quantum mechanics, brain study, AI safety, and finance from first principles."
+                subtitle: "Exploring cybersecurity, quantum computing, AI safety, and financial intelligence from first principles."
             },
             {
                 title: "EDUCATOR & BUILDER",
-                subtitle: "Building educational initiatives like Team A to turn knowledge into practical competence and student impact."
+                subtitle: "Building practical initiatives like Team A to turn knowledge into student competence and impact."
             }
         ];
 
